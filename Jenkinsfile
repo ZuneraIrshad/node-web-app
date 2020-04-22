@@ -8,7 +8,7 @@ node('NODE-NPM-APP'){
 		//}finally{
 		//archiveArtifacts artifacts: 'ConsoleApp1/*.*'
 		//}
-    echo 'built test'
+    		echo 'build test'
 	}
 	stage('Test'){
 		echo 'Execute unit tests'
@@ -18,8 +18,5 @@ node('NODE-NPM-APP'){
 	}
 	stage('Deploy'){
 		echo 'Push to deployment'
-	}
-	stage('Archive'){
-		archiveArtifacts artifacts: 'ConsoleApp1/*.*'
 	}
 }
