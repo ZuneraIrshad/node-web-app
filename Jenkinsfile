@@ -1,4 +1,4 @@
-genericbuild(target:"node-npm-app")
+genericbuild(target:"node-npm")
 
 
 
