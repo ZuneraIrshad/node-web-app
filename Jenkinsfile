@@ -1,3 +1,14 @@
+genericbuild(target:"node-npm-app")
+
+
+
+
+
+
+
+
+
+// delete that - thats just for testing 
 node('NODE-NPM-APP'){
 	stage('SCM'){
 		checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/ZuneraIrshad/node-web-app']]])
